@@ -5,7 +5,7 @@
 	"homepage": "https://www.dnature.github.io/high-offer",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"sass": "node-sass -w scss/ -o dist/css/ --recursive",
 		"deploy": "gh-pages -d dist"
 	},
 	"author": "Divine Nature",
