@@ -216,8 +216,8 @@ nav{
     display: -ms-flexbox;
     display: flex;
     -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 
 
 
@@ -226,6 +226,7 @@ nav{
             }
     .content{
         background: lighten($transparent, 100);
+        height: 40h;
         padding: 1rem;
         text-align: center;
         margin-right: 1rem;
@@ -262,7 +263,7 @@ nav{
           background: -moz-linear-gradient(rgba(255, 255, 255, 0.582)), url(../img/clients.jpg) no-repeat bottom/cover;
           background: -o-linear-gradient(rgba(255, 255, 255, 0.582)), url(../img/clients.jpg) no-repeat bottom/cover;
           background: linear-gradient(rgba(255, 255, 255, 0.582)), url(../img/clients.jpg) no-repeat bottom/cover;
-          height: 100%;
+          height: 60vh;
           display: -webkit-box;
           display: -webkit-flex;
           display: -moz-box;
@@ -311,5 +312,3 @@ nav{
             padding: 2rem 0;
         }
     }
-
-@import 'mobile';

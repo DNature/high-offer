@@ -59,12 +59,13 @@ button{
         }
     }
     &.secondary{
-        background: $transprent;
+        background: $transparent;
         border: 1px solid $secondary-color;
-        color: $transparent;
-
+        color: $secondary-color;
+        
         &:hover{
             background: $secondary-color;
+            color: $transparent;
             @include easeOut();
         }
     }
