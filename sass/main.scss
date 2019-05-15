@@ -4,7 +4,7 @@
 nav{
     height: 3rem;
     position: fixed;
-    z-index: 1000;
+    z-index: 100;
     top: 0;
     right: 0;
     left: 0;
@@ -55,7 +55,7 @@ nav{
     background: -moz-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/home.jpg) no-repeat center/cover;
     background: -o-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/home.jpg) no-repeat center/cover;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/home.jpg) no-repeat center/cover;
-    height: 80vh;
+    height: 100vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -177,8 +177,7 @@ nav{
     }
 }
 .offer{
-    width: 70%;
-    margin: 3rem auto;
+    margin: 4rem auto;
 
     h1{
         font-size: 4rem;
@@ -191,17 +190,33 @@ nav{
         display: -moz-box;
         display: -ms-flexbox;
         display: flex;
+        width: 80%;
+        margin: auto;
         -webkit-justify-content: space-around;
             -ms-flex-pack: distribute;
                 justify-content: space-around;
 
         .col1{
             text-align: right;
-            margin-left: 2rem;
         }
         .col2{
             text-align: left;
-            margin-right: 2rem;
+        }
+        .vs{
+            width: 3rem;
+            height: 3rem;
+            text-align: center;
+            color: $transparent;
+            background: $light-color;
+            -webkit-border-radius: 50%;
+                    border-radius: 50%;
+
+            .li{
+                width: 1px;
+                height: 6rem;
+                margin: auto;
+                background: $light-color;
+            }
         }
     }
 }
@@ -209,15 +224,40 @@ nav{
 
 // == swiper slider
 .main-wrapper{
-    padding: 2rem 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    margin: 2rem;
+
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr;
+    grid-template-columns: repeat(5, 1fr);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            grid-template-areas: 'cont1 cont2 cont3 cont4 cont5';
+    grid-gap: 2rem;
+
+    .cont1{
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        grid-area: cont1;
+    }
+    .cont2{
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+        grid-area: cont2;
+    }
+    .cont3{
+        -ms-grid-row: 1;
+        -ms-grid-column: 5;
+        grid-area: cont3;
+    }
+    .cont4{
+        -ms-grid-row: 1;
+        -ms-grid-column: 7;
+        grid-area: cont4;
+    }
+    .cont5{
+        -ms-grid-row: 1;
+        -ms-grid-column: 9;
+        grid-area: cont5;
+    }
 
 
 
@@ -225,14 +265,13 @@ nav{
                 font-size: 1.1rem;
             }
     .content{
-        background: lighten($transparent, 100);
         height: 40h;
-        padding: 1rem;
+        width: 100%;
         text-align: center;
-        margin-right: 1rem;
     }
     img{
         width: 100%;
+        height: 2rem;
     }
 }
 
@@ -312,3 +351,5 @@ nav{
             padding: 2rem 0;
         }
     }
+
+    @import 'mobile';

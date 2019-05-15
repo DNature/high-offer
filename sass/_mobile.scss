@@ -1,0 +1,294 @@
+// ======== Large screens=========
+@include mediaLg{
+
+}
+
+
+// ======== Medium screens========
+@include mediaMd{
+    nav{
+        display: none;
+        &.show{
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.815);
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+               -moz-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+               -moz-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+               -moz-box-orient: vertical;
+               -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+
+            .navbar-nav{
+                text-align: center;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                   -moz-box-orient: vertical;
+                   -moz-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                    
+                    a{
+                        color: $transparent;
+                        &:hover{
+                            background: none;
+                            color: $primary-color;
+                        }
+                    }
+            }
+        }
+    }
+    #btn-menu{
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: $transparent;
+        opacity: .7;
+        -webkit-border-radius: .3rem;
+                border-radius: .3rem;
+        z-index: 1000;
+        cursor: pointer;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+           -moz-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+           -moz-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+
+        .btn-line{
+            width: 2rem;
+            height: 3px;
+            margin: 3px 0;
+            background: $primary-color;
+            @include easeOut();
+        }
+
+        &.menu{
+            .btn-line{
+                margin-left: 3px;
+                &:nth-child(1){
+                    -webkit-transform: rotate(47deg) translateY(10px) translateX(5px);
+                       -moz-transform: rotate(47deg) translateY(10px) translateX(5px);
+                        -ms-transform: rotate(47deg) translateY(10px) translateX(5px);
+                         -o-transform: rotate(47deg) translateY(10px) translateX(5px);
+                            transform: rotate(47deg) translateY(10px) translateX(5px);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:nth-child(3){
+                -webkit-transform: rotate(-47deg) translateY(-10px) translateX(5px);
+                    -moz-transform: rotate(-47deg) translateY(-10px) translateX(5px);
+                    -ms-transform: rotate(-47deg) translateY(-10px) translateX(5px);
+                        -o-transform: rotate(-47deg) translateY(-10px) translateX(5px);
+                        transform: rotate(-47deg) translateY(-10px) translateX(5px);
+                }
+            }
+        }
+    }
+
+    #home{
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .main-wrapper{
+        .content{
+             img{
+            height: 1.5rem;
+        }
+        p{
+            font-size: .9rem;
+        }
+        }
+        
+    }
+
+    #start{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 2rem 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            -ms-grid-rows: auto 2rem auto;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                grid-template-areas: 'col1 col2' 'col3 col4';
+        
+        .col1{
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            grid-area: col1;
+        }
+        .col2{
+            -ms-grid-row: 1;
+            -ms-grid-column: 3;
+            grid-area: col2;
+        }
+        .col3{
+            -ms-grid-row: 3;
+            -ms-grid-column: 1;
+            grid-area: col3;
+        }
+        .col4{
+            -ms-grid-row: 3;
+            -ms-grid-column: 3;
+            grid-area: col4;
+        }
+    }
+    #offer{
+        h1{
+            font-size: 4rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
+
+    .offer{
+        .col-md2{
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+               -moz-box-orient: vertical;
+               -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            .col{
+                margin: auto;
+            }
+            .vs{
+                margin: auto;
+
+            .li{
+                display: none;
+            }
+        }
+        }
+    }
+}
+
+
+// ======== Tablets ==============
+@include mediaTb{
+    .main-wrapper{
+        overflow-x: scroll;
+
+        .cont3{
+            width: 6rem;
+
+            img, svg{
+                width: 100%;
+            }
+        }
+    }
+    .offer{
+        h1{
+            font-size: 3rem;
+        }
+    }
+    #start{
+        display: block;
+        margin: auto;
+
+        .col-lg4{
+            margin: 2rem;
+        }
+    }
+
+    #home{
+        form{
+            button .btn{
+                padding: .5rem .7rem;
+            }
+            input{
+                width: 14rem;
+            }
+        }
+    }
+}
+
+
+// ======== Smart Phones =========
+@include mediaSm{
+    .main-wrapper{
+
+        display: block;
+        width: 7rem;
+        margin: 3rem auto;
+
+        .content{
+            border-bottom: 1px solid $light-color;
+            margin: 2rem auto;
+        }
+    }
+    #home{
+        h1{
+            font-size: 1.7rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        form{
+            button .btn{
+                font-size: .9rem;
+            }
+            input{
+                width: 9rem;
+                font-size: .8rem;
+                padding: .5rem;
+                height: 1.7rem;
+            }
+        }
+    }
+}
+
+
+
+// ======== Extra Small Screens=========
+@include mediaXSm{
+    
+}

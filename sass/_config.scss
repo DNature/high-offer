@@ -1,7 +1,7 @@
 $primary-color: rgb(0, 110, 255);
 $secondary-color: rgb(0, 0, 32);
 $light-color: #555;
-$transparent: #ddd;
+$transparent: #eee;
 
 // ===== Ease Out Transition =====
 @mixin easeOut{
@@ -26,7 +26,6 @@ html, body{
        -moz-box-sizing: border-box;
             box-sizing: border-box;
     overflow-x: hidden;
-    scroll-behavior: smooth;
     background: $transparent;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
